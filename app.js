@@ -24,36 +24,50 @@ app.get("/", (req, res) => {
 })
 
 // Team Routes
-app.post('/teams', async (req, res) => {
+
+//Add a new team into db
+app.post('/addteam', async (req, res) => {
  
 });
 
-app.get('/teams/:name', async (req, res) => {
+//Get existing team from db
+app.get('/getteam/:name', async (req, res) => {
   
 });
 
-app.put('/teams/:name', async (req, res) => {
+
+//Update team
+app.put('/updateteam/:name', async (req, res) => {
   
 });
 
-app.delete('/teams/:name', async (req, res) => {
+
+//Delete team
+app.delete('/deleteteam/:name', async (req, res) => {
  
 });
 
 // Player Routes
-app.post('/players', async (req, res) => {
+
+//Add new player
+app.post('/addplayer', async (req, res) => {
  
 });
 
-app.get('/players/:name', async (req, res) => {
+//Get a player
+app.get('/getplayer/:name', async (req, res) => {
   
 });
 
-app.put('/players/:name', async (req, res) => {
+
+//Update a player
+app.put('/updateplayer/:name', async (req, res) => {
   
 });
 
-app.delete('/players/:name', async (req, res) => {
+
+//Delete a player
+app.delete('/deleteplayer/:name', async (req, res) => {
   
 });
 
