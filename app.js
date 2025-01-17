@@ -6,16 +6,36 @@ app.use(express.json());
 // MongoDB Connection
 
 
+ 
+  // .then(() => console.log('Connected to MongoDB...'))
+
+
+
 // ---Schemas and Models---
 
 // Team Schema and Model
+try{
+ 
 
+}catch(err){
+  console.log(err.message);
+}
 
 // Player Schema and Model
+try{
+ 
 
+}catch(err){
+  console.log(err.message);
+}
 
 // Match Schema and Model
+try{
 
+ 
+}catch(err){
+  console.log(err.message);
+}
 
 // --- ROUTES ---
 
@@ -25,46 +45,96 @@ app.get("/", (req, res) => {
 
 // Team Routes
 app.post('/teams', async (req, res) => {
+  try{
  
+
+  }catch(err){
+    console.log(err.message);
+  }
 });
 
 app.get('/teams/:name', async (req, res) => {
-  
+  try{
+ 
+
+  }catch(err){
+    console.log(err.message);
+  }
 });
 
 app.put('/teams/:name', async (req, res) => {
-  
+  try{
+ 
+
+  }catch(err){
+    console.log(err.message);
+  }
 });
 
 app.delete('/teams/:name', async (req, res) => {
+  try{
  
+
+  }catch(err){
+    console.log(err.message);
+  }
 });
 
 // Player Routes
 app.post('/players', async (req, res) => {
+  try{
  
+
+  }catch(err){
+    console.log(err.message);
+  }
 });
 
 app.get('/players/:name', async (req, res) => {
-  
+  try{
+ 
+
+  }catch(err){
+    console.log(err.message);
+  }
 });
 
 app.put('/players/:name', async (req, res) => {
-  
+  try{
+ 
+
+  }catch(err){
+    console.log(err.message);
+  }
 });
 
 app.delete('/players/:name', async (req, res) => {
-  
+  try{
+ 
+
+  }catch(err){
+    console.log(err.message);
+  }
 });
 
 // Match Routes
 app.post('/matches', async (req, res) => {
-  
+  try{
+ 
+
+  }catch(err){
+    console.log(err.message);
+  }
  
 });
 
 app.get('/matches', async (req, res) => {
-  
+  try{
+ 
+    
+  }catch(err){
+    console.log(err.message);
+  }
 });
 
 // --- SERVER SETUP ---
