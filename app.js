@@ -44,6 +44,7 @@ app.get("/", (req, res) => {
 })
 
 // Team Routes
+//Add new team to the database
 app.post('/teams', async (req, res) => {
   try{
  
@@ -53,6 +54,7 @@ app.post('/teams', async (req, res) => {
   }
 });
 
+//Get team from the database
 app.get('/teams/:name', async (req, res) => {
   try{
  
@@ -62,6 +64,7 @@ app.get('/teams/:name', async (req, res) => {
   }
 });
 
+//Update team in the database
 app.put('/teams/:name', async (req, res) => {
   try{
  
@@ -71,6 +74,7 @@ app.put('/teams/:name', async (req, res) => {
   }
 });
 
+//Delete team from the database
 app.delete('/teams/:name', async (req, res) => {
   try{
  
@@ -81,6 +85,7 @@ app.delete('/teams/:name', async (req, res) => {
 });
 
 // Player Routes
+//Add new player to the database
 app.post('/players', async (req, res) => {
   try{
  
@@ -90,6 +95,7 @@ app.post('/players', async (req, res) => {
   }
 });
 
+//Get player from the database
 app.get('/players/:name', async (req, res) => {
   try{
  
@@ -99,6 +105,7 @@ app.get('/players/:name', async (req, res) => {
   }
 });
 
+//Update player in the database
 app.put('/players/:name', async (req, res) => {
   try{
  
@@ -108,6 +115,7 @@ app.put('/players/:name', async (req, res) => {
   }
 });
 
+//Delete player from the database
 app.delete('/players/:name', async (req, res) => {
   try{
  
