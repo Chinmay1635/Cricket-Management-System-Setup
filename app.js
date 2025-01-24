@@ -6,7 +6,6 @@ app.use(express.json());
 // MongoDB Connection
 
 
- 
   // .then(() => console.log('Connected to MongoDB...'))
 
 
@@ -14,41 +13,22 @@ app.use(express.json());
 // ---Schemas and Models---
 
 // Team Schema and Model
-try{
- 
-
-}catch(err){
-  console.log(err.message);
-}
 
 // Player Schema and Model
-try{
- 
-
-}catch(err){
-  console.log(err.message);
-}
 
 // Match Schema and Model
-try{
-
- 
-}catch(err){
-  console.log(err.message);
-}
 
 // --- ROUTES ---
 
 app.get("/", (req, res) => {
-  res.send("Server is running...")
+  res.send("Welcome to MongoDB Club Service!!!")
 })
 
 // Team Routes
 //Add new team to the database
 app.post('/teams', async (req, res) => {
   try{
- 
-
+    
   }catch(err){
     console.log(err.message);
   }
@@ -57,7 +37,7 @@ app.post('/teams', async (req, res) => {
 //Get team from the database
 app.get('/teams/:name', async (req, res) => {
   try{
- 
+     
 
   }catch(err){
     console.log(err.message);
